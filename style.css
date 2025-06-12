@@ -1,0 +1,59 @@
+body {
+	background-color: black;
+}
+
+.navbar {
+	position: fixed;
+	background-color: #15141b;
+	top: 0;
+	left: 0;
+	bottom: 97%;
+	width: 100%;
+	border: 10px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.navbar-button {
+	
+	background-color: #15141b;
+	padding: .6%;
+}
+
+.navbar-button:hover {
+	background-color: white;
+}
+
+.navbar-button a:hover {
+	color: black;
+}
+
+.navbar-button a {
+	font-family: sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+.main-panel {
+	margin-top: 50px;
+}
+
+.main-panel h1 {
+	text-align: left;
+	color: white;
+	font-family: sans-serif;
+}
+
+.main-panel u {
+	font-size: 2.5em;
+}
+
+.projects-panel {
+	background-color: white;
+	font-family: sans-serif;
+}
+
+.projects-panel-item {
+	background-color: white;
+	font-family: sans-serif;
+}
