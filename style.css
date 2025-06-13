@@ -2,6 +2,29 @@ body {
 	background-color: black;
 }
 
+#animated-gradient-text {
+	background: linear-gradient(25deg, red, blue);
+	background-size: 300% 300%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	
+	/*Animation*/
+	animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .navbar {
 	position: fixed;
 	background-color: #15141b;
@@ -22,6 +45,7 @@ body {
 
 .navbar-button:hover {
 	background-color: white;
+	color: black;
 }
 
 .navbar-button a:hover {
@@ -56,4 +80,15 @@ body {
 .projects-panel-item {
 	background-color: white;
 	font-family: sans-serif;
+}
+
+.projects-panel-item #projects-panel-item-description {
+	float: right;
+	font-size: 1.25em;
+	text-align: right;
+} 
+
+.projects-panel-item #projects-panel-item-image {
+	width: 25%;
+	height: 25%;
 }
